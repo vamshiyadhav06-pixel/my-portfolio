@@ -1,0 +1,25 @@
+DEPLOY THIS PROJECT ON VERCEL
+==============================
+
+The project root contains index.html, style.css, script.js, assets/, api/, and vercel.json.
+
+1. Extract this ZIP on your computer.
+2. Open your GitHub repository: https://github.com/vamshiyadhav06-pixel/my-portfolio
+3. Upload the extracted CONTENTS to the repository root (not the outer folder).
+   Ensure index.html is visible on the main repository page.
+4. Commit the uploaded files to the main branch.
+5. In Vercel, import the GitHub repository or open the existing project and redeploy.
+6. Settings for a plain static frontend:
+   - Framework Preset: Other
+   - Root Directory: ./
+   - Build Command: empty
+   - Output Directory: empty
+   - Install Command: empty
+7. Click Deploy / Redeploy.
+
+API notes:
+- GET /api/health returns a health-check response.
+- POST /api/contact validates name, email, and message.
+- The contact endpoint does not send email or save submissions; connect an email/database service for that.
+
+If your current Vercel project is already connected to this repository, a new commit to main should trigger a deployment automatically.
